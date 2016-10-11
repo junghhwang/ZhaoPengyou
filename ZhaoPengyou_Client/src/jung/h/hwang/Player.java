@@ -88,18 +88,4 @@ public class Player {
         }
         return cardsWithGivenValue;
     }
-
-
-    /**
-     * @param obj is the object that we're comparing the player with
-     * @return true if the names are equal, false otherwise
-     */
-    @Override
-    public boolean equals(Object obj) {
-        if (!(obj instanceof Player)) {
-            return false;
-        }
-        Player other = (Player) obj;
-        return other.name.equals(this.name);
-    }
 }
