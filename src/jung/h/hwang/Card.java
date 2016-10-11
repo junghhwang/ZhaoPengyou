@@ -16,6 +16,7 @@ public class Card {
      * @param isBlack denotes if the card is black. only SPADES and CLUBS should be black
      */
     public Card(int value, Suit suit, boolean isBlack) {
+        assert(value >= 0 && value <= 13);
         this.value = value;
         this.suit = suit;
         this.isBlack = isBlack;
@@ -36,28 +37,10 @@ public class Card {
     }
 
     /**
-     * @param value is the value that you're setting the card value as
-     */
-    public void setValue(int value) {
-        this.value = value;
-    }
-
-    /**
      * @return the suit of the card. Joker has a suit of Suit.JOKER
      */
     public Suit getSuit() {
         return suit;
-    }
-
-    /**
-     * @param suit is the suit that you're trying to set the card's suit as. If suit is Suit.JOKER, this automatically
-     *             sets it's value to 0.
-     */
-    public void setSuit(Suit suit) {
-        this.suit = suit;
-        if (suit.equals(Suit.JOKER)) {
-            this.value = 0;
-        }
     }
 
     /**
@@ -66,14 +49,7 @@ public class Card {
     public boolean isTheCardBlack() {
         return isBlack;
     }
-
-    /**
-     * @param isBlack sets the color of the card with the boolean flag "isBlack"
-     */
-    public void setIsBlack(boolean isBlack) {
-        this.isBlack = isBlack;
-    }
-
+    
     /**
      * @param value is the value that we're trying to convert into a class of Card
      * @return a String representation of the card value, if exists
