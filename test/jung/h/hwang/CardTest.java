@@ -27,11 +27,6 @@ public class CardTest {
         assertEquals(card.getValue(), 7);
     }
 
-    @Test
-    public void setValue() throws Exception {
-        card.setValue(11);
-        assertEquals(card.getValue(), 11);
-    }
 
     @Test
     public void getSuit() throws Exception {
@@ -39,25 +34,8 @@ public class CardTest {
     }
 
     @Test
-    public void setSuit() throws Exception {
-        card.setSuit(Suit.HEARTS);
-        assertEquals(card.getSuit(), Suit.HEARTS);
-    }
-    @Test
-    public void setSuitToJoker() throws Exception {
-        card.setSuit(Suit.JOKER);
-        assertEquals(card.getValue(), 0);
-    }
-
-    @Test
     public void isTheCardBlack() throws Exception {
         assert(card.isTheCardBlack());
-    }
-
-    @Test
-    public void setIsBlack() throws Exception {
-        card.setIsBlack(false);
-        assertFalse(card.isTheCardBlack());
     }
 
     @Test

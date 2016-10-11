@@ -49,7 +49,7 @@ public class Card {
     public boolean isTheCardBlack() {
         return isBlack;
     }
-    
+
     /**
      * @param value is the value that we're trying to convert into a class of Card
      * @return a String representation of the card value, if exists
