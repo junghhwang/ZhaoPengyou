@@ -1,6 +1,7 @@
 package jung.h.hwang;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import static jung.h.hwang.Suit.*;
 
@@ -89,10 +90,6 @@ public class Deck {
      * Randomly shuffles the deck
      */
     public void shuffle() {
-        ArrayList<Card> newDeck = new ArrayList<>();
-        for (int i = deck.size(); i > 0; i--) {
-            Card selectedCard = deck.remove((int) (i * Math.random()));
-            deck.add(selectedCard);
-        }
+        Collections.shuffle(deck);
     }
 }
