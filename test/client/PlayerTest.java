@@ -2,6 +2,7 @@ package client;
 
 import org.junit.Before;
 import org.junit.Test;
+import server.Deck;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package client;
+package lib;
 
 /**Description of the class Card
  * Card is an object that contains the information of a trump card.

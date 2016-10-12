@@ -1,4 +1,7 @@
-package client;
+package server;
+
+import lib.Card;
+import lib.Suit;
 
 import java.util.ArrayList;
 import java.util.Collections;

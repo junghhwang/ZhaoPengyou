@@ -1,4 +1,4 @@
-package client;
+package lib;
 
 /**
  * Created by solmoms on 10/6/2016.
