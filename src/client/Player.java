@@ -1,4 +1,6 @@
-package jung.h.hwang;
+package client;
+
+import lib.Card;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,8 @@
-package jung.h.hwang;
+package client;
 
 import org.junit.Before;
 import org.junit.Test;
+import server.Deck;
 
 import static org.junit.Assert.*;
 
@@ -67,7 +68,7 @@ public class PlayerTest {
 
     @Test
     public void equalsTrue() throws Exception {
-        Player other = new Player("Player1");
+        Player other = player;
         assertEquals(player, other);
     }
 
