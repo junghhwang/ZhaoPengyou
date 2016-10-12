@@ -1,5 +1,7 @@
 package client;
 
+import lib.Card;
+
 import java.util.ArrayList;
 
 /**
