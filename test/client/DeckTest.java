@@ -1,4 +1,4 @@
-package jung.h.hwang;
+package client;
 
 import org.junit.Before;
 import org.junit.Test;

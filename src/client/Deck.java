@@ -1,9 +1,7 @@
-package jung.h.hwang;
+package client;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
-import static jung.h.hwang.Suit.*;
 
 /**Description of the class Deck
  *
@@ -26,17 +24,17 @@ public class Deck {
         int deckCtr = 0;
         while (deckCtr < numDeck) {
             for (int i = 1; i <= 13; i++){
-                deck.add(new Card(i, CLUBS, true));
-                deck.add(new Card(i, SPADES, true));
-                deck.add(new Card(i, DIAMONDS, false));
-                deck.add(new Card(i, HEARTS, false));
+                deck.add(new Card(i, Suit.CLUBS, true));
+                deck.add(new Card(i, Suit.SPADES, true));
+                deck.add(new Card(i, Suit.DIAMONDS, false));
+                deck.add(new Card(i, Suit.HEARTS, false));
             }
             if (addBothJokers) {
-                deck.add(new Card(0, JOKER, true));
-                deck.add(new Card(0, JOKER, false));
+                deck.add(new Card(0, Suit.JOKER, true));
+                deck.add(new Card(0, Suit.JOKER, false));
             }
             else if (addBlackJoker) {
-                deck.add(new Card(0, JOKER, true));
+                deck.add(new Card(0, Suit.JOKER, true));
             }
             deckCtr++;
         }

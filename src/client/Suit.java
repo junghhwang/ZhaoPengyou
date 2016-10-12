@@ -1,4 +1,4 @@
-package jung.h.hwang;
+package client;
 
 /**
  * Created by solmoms on 10/6/2016.

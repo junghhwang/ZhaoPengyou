@@ -1,4 +1,4 @@
-package jung.h.hwang;
+package client;
 
 import java.util.ArrayList;
 
