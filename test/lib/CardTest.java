@@ -12,6 +12,7 @@ import static org.junit.Assert.assertFalse;
 public class CardTest {
 
     Card card;
+
     @Before
     public void setUpCard() throws Exception {
         card = new Card(7, Suit.SPADES, true);
@@ -35,38 +36,38 @@ public class CardTest {
 
     @Test
     public void isTheCardBlack() throws Exception {
-        assert(card.isTheCardBlack());
+        assert (card.isTheCardBlack());
     }
 
-        @Test
-        public void equalsReturnTrue() throws Exception {
-            Card other = new Card(7, Suit.SPADES, false); //Although they have different colors, the method should return true
-            assertEquals(card, other);
-        }
-
-        @Test
-        public void getCorresPondingClassJoker() throws Exception {
-            assertEquals(Card.getCorrespondingClass(0), "JOKER");
-        }
-
-        @Test
-        public void getCorresPondingClassAce() throws Exception {
-            assertEquals(Card.getCorrespondingClass(1), "ACE");
-        }
-
-        @Test
-        public void getCorresPondingClassNumber() throws Exception {
-            assertEquals(Card.getCorrespondingClass(7), "SEVEN");
-        }
-
-        @Test
-        public void getCorresPondingClassQueen() throws Exception {
-            assertEquals(Card.getCorrespondingClass(12), "QUEEN");
-        }
-
-        @Test
-        public void equalsReturnFalse() throws Exception {
-            Card other = new Card(7, Suit.HEARTS, true);
-            assertFalse(card.equals(other));
-        }
+    @Test
+    public void equalsReturnTrue() throws Exception {
+        Card other = new Card(7, Suit.SPADES, false); //Although they have different colors, the method should return true
+        assertEquals(card, other);
     }
+
+    @Test
+    public void getCorresPondingClassJoker() throws Exception {
+        assertEquals(Card.getCorrespondingClass(0), "JOKER");
+    }
+
+    @Test
+    public void getCorresPondingClassAce() throws Exception {
+        assertEquals(Card.getCorrespondingClass(1), "ACE");
+    }
+
+    @Test
+    public void getCorresPondingClassNumber() throws Exception {
+        assertEquals(Card.getCorrespondingClass(7), "SEVEN");
+    }
+
+    @Test
+    public void getCorresPondingClassQueen() throws Exception {
+        assertEquals(Card.getCorrespondingClass(12), "QUEEN");
+    }
+
+    @Test
+    public void equalsReturnFalse() throws Exception {
+        Card other = new Card(7, Suit.HEARTS, true);
+        assertFalse(card.equals(other));
+    }
+}
