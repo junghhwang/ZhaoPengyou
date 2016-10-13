@@ -8,5 +8,5 @@ soc.listen(5)
 while True:
     conn,addr=soc.accept()
     print("Got connection from", addr)
-    msg=conn.rev(1024)
+    msg=conn.recv(1024)
     print(msg)
